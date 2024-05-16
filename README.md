@@ -53,7 +53,7 @@ The scraping component of this project involves several key steps to ensure accu
 The necessary libraries for web scraping, such as Selenium for browser automation and Scrapy for HTML parsing, are imported at the beginning. Additional libraries like pandas for data manipulation and datetime for handling date and time are also used.
 
 #### Log In to LinkedIn & Enter Search Criteria:
-The Chrome WebDriver is initialized to control the browser. The browser navigates to the LinkedIn login page, and the user is prompted to enter their credentials, (to avoid problems, one should use an alternative Linkedin account). After logging in, the user specifies the desired job position and location for the study.
+The Chrome WebDriver is initialized to control the browser. The browser navigates to the LinkedIn login page, and the user is prompted to enter their credentials, (to avoid problems, one should use an **alternative Linkedin account**). After logging in, the user specifies the desired job position and location for the study.
 
 #### Scrape Job Offers:
 The script identifies the job offers listed on the search results page. Using predefined XPath expressions to locate the necessary elements, it extracts relevant details such as job title, location, number of applicants, responsibility levels, company size, sector, and skill set.
@@ -67,7 +67,7 @@ Extracted data is compiled into a pandas DataFrame, then it passes through a pre
 By following these steps, the system can autonomously scrape LinkedIn for job postings, extracting valuable information. This structured approach ensures that the data collected is reliable and comprehensive, providing a solid foundation for the subsequent analysis phase.
 
 #### Disclaimer:
-This project was undertaken for educational purposes and as a personal tool to assist in my job search. I made the project reproducible so it works for any job description and location specified. However, I do not endorse or take responsibility for any use of this project by others for their own benefit. Please be aware that web scraping LinkedIn violates their terms and conditions, and any use of this code for scraping LinkedIn is done at your own risk.
+This project was undertaken for educational purposes and as a personal tool to assist in my job search. I made the project reproducible so it works for any job description and location specified. However, **I do not endorse or take responsibility** for any use of this project by others for their own benefit. Please be aware that web scraping LinkedIn violates their terms and conditions, and any use of this code for scraping LinkedIn is done at your own risk.
 
 ### Analysis
 
@@ -80,3 +80,5 @@ This project was undertaken for educational purposes and as a personal tool to a
 ## Future Work
 
 ## Contributions
+
+## Tools
