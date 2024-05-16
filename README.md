@@ -31,6 +31,7 @@ The primary objective of this project is to develop an automated, reproducible, 
 - Reproducible: The process should be repeatable, ensuring consistent results when the same job position and location are queried.
 - Versatile: The system should work for any desired job position, not limited to a specific role such as Data Scientist.
 - Fault-Tolerant: To ensure smooth operation, the system must handle errors gracefully, allowing the automation to continue functioning reliably.
+
 These characteristics—automation, reproducibility, versatility, and fault tolerance—are crucial for a useful data science project, ensuring efficiency, reliability, and broad applicability.
 
 The system aims to provide a comprehensive analysis of the top skills, studying their distribution across various dimensions:
