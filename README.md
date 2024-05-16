@@ -26,6 +26,24 @@ This project was undertaken for **educational purposes** and as a personal tool 
 
 ## Goals
 
+The primary objective of this project is to develop an automated, reproducible, versatile, and fault-tolerant system that scrapes LinkedIn to analyze the top skills required for desired job positions.
+- Automated: The system should operate autonomously, requiring the user to only input the job position and location. The system will handle the scraping and data analysis without further user intervention.
+- Reproducible: The process should be repeatable, ensuring consistent results when the same job position and location are queried.
+- Versatile: The system should work for any desired job position, not limited to a specific role such as Data Scientist.
+- Fault-Tolerant: To ensure smooth operation, the system must handle errors gracefully, allowing the automation to continue functioning reliably.
+These characteristics—automation, reproducibility, versatility, and fault tolerance—are crucial for a useful data science project, ensuring efficiency, reliability, and broad applicability.
+
+The system aims to provide a comprehensive analysis of the top skills, studying their distribution across various dimensions:
+Kind of Job Offer: By querying a broad term like "Data Scientist," the system can identify different roles (e.g., data scientist, data analyst, project manager, machine learning specialist) and understand how top skills differ among these roles.
+- Location: Similarly, searching by location (e.g., "Spain") can reveal different groups (e.g., Barcelona, Madrid), illustrating regional differences in required skills.
+- Number of Applicants: The analysis will consider how the top skills vary depending on the number of applicants for a job offer, providing insights into competitive skill sets.
+- Responsibility Level: The system will explore how required skills vary based on the level of responsibility (e.g., no experience, internship, full-time), offering a nuanced view of career progression requirements.
+- Company Size: Understanding how the top skills differ depending on the size of the company (e.g., small startups vs. large corporations) will help tailor skill development to specific company profiles.
+- Sector: The analysis will also cover different industry sectors (e.g., technology, healthcare, finance), showing sector-specific skill demands.
+
+By achieving these goals, the project aims to assist individuals in their personal career development, equipping them with knowledge of in-demand skills tailored to specific job roles, locations, and industry sectors. This comprehensive analysis not only contributes valuable insights to the broader community of data science professionals and recruiters but also aspires to bridge the gap between job seekers and employers, fostering a more informed and efficient job market.
+
+
 ## Methodology
 
 ## Results
