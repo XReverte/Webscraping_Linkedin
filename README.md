@@ -47,13 +47,13 @@ By achieving these goals, the project aims to assist individuals in their person
 
 ## Methodology
 ### Scraping
-The scraping component of this project involves several key steps to ensure accurate and efficient data collection from LinkedIn. The entire process is designed to be automated, reproducible, versatile, and fault-tolerant. Here’s an outline of the scraping methodology:
+The scraping component of this project involves several key steps to ensure accurate and efficient data collection from LinkedIn. The entire process is designed to be **automated, reproducible, versatile, and fault-tolerant**. Here’s an outline of the scraping methodology:
 
 #### Log In to LinkedIn & Enter Search Criteria:
 The Chrome WebDriver is initialized to control the browser. The browser navigates to the LinkedIn login page, and the user is prompted to enter their credentials, (to avoid problems, one should use an **alternative Linkedin account**). After logging in, the user specifies the desired job position and location for the study.
 
 #### Scrape Job Offers:
-The script identifies the job offers listed on the search results page. Using predefined XPath expressions to locate the necessary elements, it extracts relevant details such as job title, location, number of applicants, responsibility levels, company size, sector, and skill set.
+The script identifies the job offers listed on the search results page. Using predefined XPath expressions to locate the necessary elements, it extracts relevant details such as **job title, location, number of applicants, responsibility levels, company size, sector, and skill set**.
 
 #### Error Handling:
 The script includes mechanisms to handle errors gracefully, such as retrying failed requests and logging errors for later review. This ensures the scraping process continues smoothly even if some elements are not found.
@@ -71,24 +71,24 @@ The analysis component of this project involves studying the skillset across var
 
 The first kind analysis: (“Kind of job offer”, “Location”, “Sector”), need of Natural Language Processing and clusterization techniques, so we try to make the code reproductible for them all by defining functions.
 
-The other kind of analysis is much simpler, because it don’t need for NLP nor clusterization techniques. “Nº of applications”, “responsibility” and “employees” pertain to this group. Although they all need for its particular preprocessing techniques, there is nothing worth mentioning here. So, for brevity, and in order to avoid redundancy, we will focus on explaining the methodology for the complex analysis, specifically using "Kind of Job Offer" as an example.
+The other kind of analysis is much simpler, because it don’t need for NLP nor clusterization techniques. “Nº of applications”, “responsibility” and “employees” pertain to this group. Although they all need for its particular preprocessing techniques, there is nothing worth mentioning here. So, for brevity, and in order to avoid redundancy, we will focus on explaining the methodology for the complex analysis, specifically using "**Kind of Job Offer**" as an example.
 
 #### NLP:
-We first create a function to clean and tokenize the text. This function standardizes the data by converting it to lowercase, removing non-alphabetic characters, and eliminating English and Spanish stopwords. Then we build another function that filters the tokenized text by removing words that appear only once, ensuring a more logical and intuitive grouping.
+We first create a function to clean and **tokenize** the text. This function standardizes the data by converting it to lowercase, removing non-alphabetic characters, and eliminating English and Spanish stopwords. Then we build another function that filters the tokenized text by removing words that appear only once, ensuring a more logical and intuitive grouping.
 
-A Term Frequency-Inverse Inverse Document Frequency (TF-IDF) matrix is created. This matrix measures the frequency of words in a document (TF) and the rarity of words in the corpus (IDF), highlighting significant words for each specific document, indicating its relative importance.
+A Term Frequency-Inverse Inverse Document Frequency (**TF-IDF**) matrix is created. This matrix measures the frequency of words in a document (TF) and the rarity of words in the corpus (IDF), highlighting significant words for each specific document, indicating its relative importance.
 
 #### Best K and Hyperparameters:
-Using the TF-IDF matrix, we determine the optimal number of clusters (K). The gap statistic is computed for a range of K values based on the sum of unique words after tokenization and filtering. The scores for each K are normalized and stored in a dictionary.
+Using the TF-IDF matrix, we determine the optimal number of clusters (K). The **gap statistic** is computed for a range of K values based on the sum of unique words after tokenization and filtering. The scores for each K are normalized and stored in a dictionary.
 
-Alternative methods, such as the silhouette score and elbow method, are also explored. Each method builds a dictionary of normalized importance values for each K, allowing us to select the overall best K.
+Alternative methods, such as the **silhouette** score and **elbow method**, are also explored. Each method builds a dictionary of normalized importance values for each K, allowing us to select the overall best K.
 
-Once the best K is selected, hyperparameters are optimized through multiple iterations of grid search, leveraging the least extracted best params for the new search. Each model, both for finding K and hyperparameters, has built with cross validation and multiple iterations, ensuring robust and meaningful conclusions.
+Once the best K is selected, hyperparameters are optimized through multiple iterations of **Grid-Search**, leveraging the least extracted best params for the new search. Each model, both for finding K and hyperparameters, has built with cross validation and multiple iterations, ensuring robust and meaningful conclusions.
 
 #### Visualizations:
-With the optimal K and hyperparameters, a k-means model is fitted, and cluster labels are added to the dataset, preparing it for group analysis. A word cloud is generated to visualize the composition and importance of elements within each cluster.
+With the optimal K and hyperparameters, a k-means model is fitted, and cluster labels are added to the dataset, preparing it for group analysis. A **Word Cloud** is generated to visualize the composition and importance of elements within each cluster.
 
-A new DataFrame is created to count the occurrences of each skill across different clusters. Scatter plots are built to represent how the top 30 skills vary for each cluster. For in-depth analysis, similar plots are created focusing on individual clusters, allowing for a detailed examination of specific groups.
+A new DataFrame is created to count the occurrences of each skill across different clusters. **Scatter-plots** are built to represent how the top 30 skills vary for each cluster. For in-depth analysis, similar plots are created focusing on individual clusters, allowing for a detailed examination of specific groups.
 
 ## Results & Discussion
 In this chapter, we will focus on the results of the "Kind of Job Offer" section, which we believe are the most insightful. See the full project for understanding how top skills vary depending on location, nº of applicants, responsibility level, company size and sector
