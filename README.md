@@ -126,10 +126,21 @@ To compare different groups, we can study case-oriented plots. For example, focu
 To study this chart, we only need to focus on the areas where the **line graph is at a minimum** to see which skills are particularly important for this group. Knowing this, we easily find out that **NLP** and **predictive analytics** gain a lot of importance for a data scientist. **Data visualization**, **Deep Learning** and **statistics** skills are also more critical for data scientists compared to other roles.
 
 ## Future Work
-Hierarchical clustering
+Future iterations of this project could benefit from a more exhaustive search of clustering models. For instance, exploring **hierarchical clustering** as an alternative to k-means might provide deeper insights into the relationships between job skills. Hierarchical clustering could uncover nested groupings within the data, offering a more nuanced understanding of skill distributions across different job roles.
 
-Further anlysis by categorizing skills (soft skills, technologies, languages, mindset, etc).
+Further analysis could be enriched by **categorizing skills** into specific groups such as soft skills, technologies, programming languages, and mindset attributes. By segmenting skills into these categories, we could gain a more detailed view of which types of skills are most critical for various job positions. This categorization would allow for targeted recommendations for job seekers looking to improve in specific areas.
+
+**Additional dimensions** could be incorporated into the analysis to provide a more comprehensive view of the job market. For example, analyzing trends over time could reveal how the demand for certain skills evolves, or incorporating company-specific data could highlight how skill requirements vary across different organizational cultures and business models.
 
 ## Contributions
+This project represents a significant step towards understanding the dynamic landscape of job market demands, particularly in the field of data science. The contributions of this project are multi-faceted:
+
+An automated system was developed to scrape LinkedIn for job postings, efficiently collecting data on the top skills required for various job positions. This system is: Automated, Reproducible, Versatile and Fault-Tolerant.
+
+By leveraging Natural Language Processing and clustering techniques, this project provides an in-depth analysis of the skills in demand across different job roles and sectors. The project includes detailed visualizations that enhance understanding of the data.
+
+By making this project available on GitHub, it contributes to the open-source community, allowing others to learn from, build upon, and enhance the work. This promotes collaboration and continuous improvement within the field.
+
+The project includes a clear disclaimer regarding the ethical and legal implications of web scraping, emphasizing the importance of adhering to LinkedIn's terms and conditions.
 
 ## Tools
