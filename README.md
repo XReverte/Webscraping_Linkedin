@@ -70,6 +70,30 @@ By following these steps, the system can autonomously scrape LinkedIn for job po
 This project was undertaken for educational purposes and as a personal tool to assist in my job search. I made the project reproducible so it works for any job description and location specified. However, **I do not endorse or take responsibility** for any use of this project by others for their own benefit. Please be aware that web scraping LinkedIn violates their terms and conditions, and any use of this code for scraping LinkedIn is done at your own risk.
 
 ### Analysis
+The analysis component of this project involves studying the skillset across various dimensions. These dimensions can be grouped into two categories:
+
+The first kind analysis: (“Kind of job offer”, “Location”, “Sector”), need of Natural Language Processing and clusterization techniques, so we try to make the code reproductible for them all by defining functions.
+
+The other kind of analysis is much simpler, because it don’t need for NLP nor clusterization techniques. “Nº of applications”, “responsibility” and “employees” pertain to this group. Although they all need for its particular preprocessing techniques, there is nothing worth mentioning here.
+
+For brevity, and in order to avoid redundancy, we will focus on explaining the methodology for the complex analysis, specifically using "Kind of Job Offer" as an example.
+
+#### NLP:
+We first create a function to clean and tokenize the text. This function standardizes the data by converting it to lowercase, removing non-alphabetic characters, and eliminating English and Spanish stopwords. Then we build another function that filters the tokenized text by removing words that appear only once, ensuring a more logical and intuitive grouping.
+
+A Term Frequency-Inverse Inverse Document Frequency (TF-IDF) matrix is created. This matrix measures the frequency of words in a document (TF) and the rarity of words in the corpus (IDF), highlighting significant words for each specific document, indicating its relative importance.
+
+#### Best K and Hyperparameters:
+Using the TF-IDF matrix, we determine the optimal number of clusters (K). The gap statistic is computed for a range of K values based on the sum of unique words after tokenization and filtering. The scores for each K are normalized and stored in a dictionary.
+
+Alternative methods, such as the silhouette score and elbow method, are also explored. Each method builds a dictionary of normalized importance values for each K, allowing us to select the overall best K.
+
+Once the best K is selected, hyperparameters are optimized through multiple iterations of grid search, leveraging the least extracted best params for the new search. Each model, both for finding K and hyperparameters, has built with cross validation and multiple iterations, ensuring robust and meaningful conclusions.
+
+#### Visualizations:
+With the optimal K and hyperparameters, a k-means model is fitted, and cluster labels are added to the dataset, preparing it for group analysis. A word cloud is generated to visualize the composition and importance of elements within each cluster.
+
+A new DataFrame is created to count the occurrences of each skill across different clusters. Scatter plots are built to represent how the top 30 skills vary for each cluster. For in-depth analysis, similar plots are created focusing on individual clusters, allowing for a detailed examination of specific groups.
 
 ## Results
 
