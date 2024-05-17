@@ -99,26 +99,24 @@ In this chapter, we will focus on the results of the "Kind of Job Offer" and "Se
 ### Kind offer:
 The Word Cloud visualization allows us to clearly identify the composition of each cluster. Each cluster represents different job roles, with word combinations unique to each group. The size of the words indicates their importance or frequency, while the colors are used for better distinction.
 
-We identified several highly cohesive clusters, meaning the words within these clusters are strongly related. The clusters (1 – Data Scientist | 2 – Data Engineer | 3 – Data Analyst | 4 – Machine Learning Engineer | 6 – Data Architect) pertain to this group, almost all of them, making clear it has been a proper clusterization.
+We identified several highly cohesive clusters, meaning the words within these clusters are strongly related. The clusters (1 – Data Scientist | 2 – Data Engineer | 3 – Data Analyst | 4 – Machine Learning Engineer | 6 – Data Architect) pertain to this group, almost all of them, making clear it has been a **proper clusterization**.
 
-Taking into account that we intend to maintain an automation and versatility philosophy, it’s obvious the segmentation won’t be perfect, just efficient and reliable. This is why there is a cluster (0 -Business Intelligence Developer) with a high heterogeneity. Additionally, the group (5 – Product Manager) is quite cohesive, but its identifier may not fully reflect the group's composition.
+Taking into account that we intend to maintain an automation and versatility philosophy, it’s obvious **the segmentation won’t be perfect**, just efficient and reliable. This is why there is a cluster (0 -Business Intelligence Developer) with a high heterogeneity. Additionally, the group (5 – Product Manager) is quite cohesive, but its identifier may not fully reflect the group's composition.
 
 As for the skills scatter-plot visualization, we see how the importance (counts – “y axis”) of the top 30 skills (“x axis”) across different job offers (clusters – “legend”). The size of the points redundantly represents the skill count, and there is a line representing mean counting of the overall groups.
 
 This analysis provides a better understanding of the data scientist job market, revealing several key insights:
--	We now understand that the most demanded programing language is Python, followed by SQL.
--	Although both are important, it seems that Data Analysis is desirable than Data Engineer, so knowing how to interpret existing data for inform decision-making is preferable than knowing how to build systems and architecture that store and process the data. Big Data is still present but left behind.
--	Having strong communication skills and proficiency in English is crucial
--	When it comes to soft skills, it's imperative to have a mindset with analytical capacity and problem-solving skills.
--	Machine Learning skills are fairly present alongside the spectrum of top skills, with Natural Language Processing (NLP) being particularly significant.
--	Knowledge in Computer Science, ETL (Extract, Transform, Load), Data Visualization, Databases, and Statistics is valuable.
--	Familiarity with Apache Spark, AWS, and Microsoft Azure technologies is useful.
+-	We now understand that the most demanded programing language is **Python**, followed by SQL.
+-	Although both are important, it seems that **Data Analysis** is desirable than Data Engineer, so knowing how to interpret existing data for inform decision-making is preferable than knowing how to build systems and architecture that store and process the data. Big Data is still present but left behind.
+-	Having strong **communication skills** and proficiency in **English** is crucial
+-	When it comes to soft skills, it's imperative to have a mindset with **analytical capacity** and **problem-solving** skills.
+-	Machine Learning skills are fairly present alongside the spectrum of top skills, with **Natural Language Processing** (NLP) being particularly significant.
+-	Knowledge in **Computer Science**, **ETL** (Extract, Transform, Load), **Data Visualization**, **Databases**, and **Statistics** is valuable.
+-	Familiarity with **Apache Spark**, **AWS**, and **Microsoft Azure** technologies is useful.
 
-We can aim to compare different groups by studying the particular case-oriented plots. For example, being “Data Scientist” the group of most interest for me, we can take a look at the same kind of plot, but filtering the data to obtain the sorted 20 most common skills for that group.
+To compare different groups, we can study case-oriented plots. For example, focusing on the "**Data Scientist**" group, we view a similar plot, but with the data filtered to obtain the sorted 20 most common skills for that group.
 
-To compare different groups, we can study case-oriented plots. For example, focusing on the "Data Scientist" group, we view a similar plot, but with the data filtered to obtain the sorted 20 most common skills for that group.
-
-To study this chart, we only need to focus on the areas where the line graph is at a minimum to see which skills are particularly important for this group. Knowing this, we easily find out that NLP and predictive gain a lot of importance for a data scientist. Data visualization, Deep Learning and statistics skills are also more critical for data scientists compared to other roles.
+To study this chart, we only need to focus on the areas where the **line graph is at a minimum** to see which skills are particularly important for this group. Knowing this, we easily find out that **NLP** and **predictive analytics** gain a lot of importance for a data scientist. **Data visualization**, **Deep Learning** and **statistics** skills are also more critical for data scientists compared to other roles.
 
 ## Limitations
 
