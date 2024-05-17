@@ -74,9 +74,7 @@ The analysis component of this project involves studying the skillset across var
 
 The first kind analysis: (“Kind of job offer”, “Location”, “Sector”), need of Natural Language Processing and clusterization techniques, so we try to make the code reproductible for them all by defining functions.
 
-The other kind of analysis is much simpler, because it don’t need for NLP nor clusterization techniques. “Nº of applications”, “responsibility” and “employees” pertain to this group. Although they all need for its particular preprocessing techniques, there is nothing worth mentioning here.
-
-For brevity, and in order to avoid redundancy, we will focus on explaining the methodology for the complex analysis, specifically using "Kind of Job Offer" as an example.
+The other kind of analysis is much simpler, because it don’t need for NLP nor clusterization techniques. “Nº of applications”, “responsibility” and “employees” pertain to this group. Although they all need for its particular preprocessing techniques, there is nothing worth mentioning here. So, for brevity, and in order to avoid redundancy, we will focus on explaining the methodology for the complex analysis, specifically using "Kind of Job Offer" as an example.
 
 #### NLP:
 We first create a function to clean and tokenize the text. This function standardizes the data by converting it to lowercase, removing non-alphabetic characters, and eliminating English and Spanish stopwords. Then we build another function that filters the tokenized text by removing words that appear only once, ensuring a more logical and intuitive grouping.
