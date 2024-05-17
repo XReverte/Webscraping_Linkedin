@@ -94,9 +94,9 @@ With the optimal K and hyperparameters, a k-means model is fitted, and cluster l
 A new DataFrame is created to count the occurrences of each skill across different clusters. Scatter plots are built to represent how the top 30 skills vary for each cluster. For in-depth analysis, similar plots are created focusing on individual clusters, allowing for a detailed examination of specific groups.
 
 ## Results & Discussion
-In this chapter, we will focus on the results of the "Kind of Job Offer" and "Sector" groupings, which we believe are the most insightful.
+In this chapter, we will focus on the results of the "Kind of Job Offer" section, which we believe are the most insightful. See the full project for understanding how top skills vary depending on location, nº of applicants, responsibility level, company size and sector
 
-### Kind offer:
+### Word Cloud:
 The Word Cloud visualization allows us to clearly identify the composition of each cluster. Each cluster represents different job roles, with word combinations unique to each group. The size of the words indicates their importance or frequency, while the colors are used for better distinction.
 
 ![WordCloud_jobOffers](https://github.com/XReverte/Webscraping_Linkedin/assets/100844285/1d6e5c98-b18d-44ee-8895-e513d71911a4)
@@ -106,9 +106,11 @@ We identified several highly cohesive clusters, meaning the words within these c
 
 Taking into account that we intend to maintain an automation and versatility philosophy, it’s obvious **the segmentation won’t be perfect**, just efficient and reliable. This is why there is a cluster (0 -Business Intelligence Developer) with a high heterogeneity. Additionally, the group (5 – Product Manager) is quite cohesive, but its identifier may not fully reflect the group's composition.
 
+### Skills Sccatter:
 As for the skills scatter-plot visualization, we see how the importance (counts – “y axis”) of the top 30 skills (“x axis”) across different job offers (clusters – “legend”). The size of the points redundantly represents the skill count, and there is a line representing mean counting of the overall groups.
 
 ![skills_jobPosition](https://github.com/XReverte/Webscraping_Linkedin/assets/100844285/f378bdee-bde5-42f4-b344-001286176961)
+*Top 30 skills sccatter-plot for each cluster -Clusterized by kind of job offer-*
 
 This analysis provides a better understanding of the data scientist job market, revealing several key insights:
 -	We now understand that the most demanded programing language is **Python**, followed by SQL.
@@ -122,6 +124,7 @@ This analysis provides a better understanding of the data scientist job market, 
 To compare different groups, we can study case-oriented plots. For example, focusing on the "**Data Scientist**" group, we view a similar plot, but with the data filtered to obtain the sorted 20 most common skills for that group.
 
 ![skills_DS](https://github.com/XReverte/Webscraping_Linkedin/assets/100844285/316c2b50-919c-4a5f-acd4-1bd95449d9af)
+*Top 20 skills for 'Data Scientist position' sccatter-plot for each cluster -Clusterized by kind of job offer-*
 
 To study this chart, we only need to focus on the areas where the **line graph is at a minimum** to see which skills are particularly important for this group. Knowing this, we easily find out that **NLP** and **predictive analytics** gain a lot of importance for a data scientist. **Data visualization**, **Deep Learning** and **statistics** skills are also more critical for data scientists compared to other roles.
 
