@@ -49,9 +49,6 @@ By achieving these goals, the project aims to assist individuals in their person
 ### Scraping
 The scraping component of this project involves several key steps to ensure accurate and efficient data collection from LinkedIn. The entire process is designed to be automated, reproducible, versatile, and fault-tolerant. Here’s an outline of the scraping methodology:
 
-#### Import Libraries:
-The necessary libraries for web scraping, such as Selenium for browser automation and Scrapy for HTML parsing, are imported at the beginning. Additional libraries like pandas for data manipulation and datetime for handling date and time are also used.
-
 #### Log In to LinkedIn & Enter Search Criteria:
 The Chrome WebDriver is initialized to control the browser. The browser navigates to the LinkedIn login page, and the user is prompted to enter their credentials, (to avoid problems, one should use an **alternative Linkedin account**). After logging in, the user specifies the desired job position and location for the study.
 
