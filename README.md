@@ -100,6 +100,7 @@ In this chapter, we will focus on the results of the "Kind of Job Offer" and "Se
 The Word Cloud visualization allows us to clearly identify the composition of each cluster. Each cluster represents different job roles, with word combinations unique to each group. The size of the words indicates their importance or frequency, while the colors are used for better distinction.
 
 ![WordCloud_jobOffers](https://github.com/XReverte/Webscraping_Linkedin/assets/100844285/1d6e5c98-b18d-44ee-8895-e513d71911a4)
+*Word Cloud for each cluster, based on their most comon keywords -Clusterized by kind of job offer-*
 
 We identified several highly cohesive clusters, meaning the words within these clusters are strongly related. The clusters (1 – Data Scientist | 2 – Data Engineer | 3 – Data Analyst | 4 – Machine Learning Engineer | 6 – Data Architect) pertain to this group, almost all of them, making clear it has been a **proper clusterization**.
 
