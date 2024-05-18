@@ -143,6 +143,24 @@ By making this project available on GitHub, it contributes to the open-source co
 
 The project includes a clear disclaimer regarding the ethical and legal implications of web scraping, emphasizing the importance of adhering to LinkedIn's terms and conditions.
 
+## Restriction License
+### Disclaimer
+This project was developed for educational purposes and personal use only. **The author does not endorse or encourage any misuse of this code**. Web scraping LinkedIn or any other website without permission violates their terms and conditions, and users should be aware of the legal and ethical implications.
+
+### Terms of Use
+This project is intended solely for **educational and personal use**. It demonstrates technical capabilities and concepts in web scraping, data analysis, and natural language processing.
+
+Users are expressly prohibited from using this code for any activity that violates LinkedIn's terms of service or any applicable laws and regulations. This includes, but is not limited to:
+- Scraping LinkedIn's website without permission.
+- Using the data obtained through this project for commercial purposes.
+- Distributing the scraped data without consent from LinkedIn.
+
+The author of this project assumes **no responsibility for any misuse of this code by third parties**. Users are solely responsible for any consequences resulting from the unauthorized use of this code.
+
+### Acknowledgements
+This project makes use of publicly available data from LinkedIn, obtained through web scraping techniques. The author acknowledges the importance of adhering to LinkedIn’s policies and terms of service.
+The code and methodologies demonstrated in this project are intended to showcase technical skills and should be used responsibly.
+
 ## Tools
 - Technologies: Python | Web Scraping | Natural Language Processing | K-Means | WordCloud
 - Libraries: selenium | scrapy | numpy | pandas | matplotlib | seaborn | wordcloud | re | nltk | sklearn | time | datetime
