@@ -144,3 +144,5 @@ By making this project available on GitHub, it contributes to the open-source co
 The project includes a clear disclaimer regarding the ethical and legal implications of web scraping, emphasizing the importance of adhering to LinkedIn's terms and conditions.
 
 ## Tools
+- Technologies: Python | Web Scraping | Natural Language Processing | K-Means | WordCloud
+- Libraries: selenium | scrapy | numpy | pandas | matplotlib | seaborn | wordcloud | re | nltk | sklearn | time | datetime
