@@ -1,4 +1,4 @@
-# Creating an automated system that scrapes LinkedIn to analyze the top skills required for desired job positions
+# Navigating the Job Market: Automated LinkedIn Skill Analysis
 
 ## Table of contents
 README.md --> Project motivation | Goals | Methodology | Results | Conclussions | Limitations | Future Work | Contributions
