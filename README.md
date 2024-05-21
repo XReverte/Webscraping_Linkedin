@@ -105,7 +105,7 @@ We identified several highly cohesive clusters, meaning the words within these c
 Taking into account that we intend to maintain an automation and versatility philosophy, it’s obvious **the segmentation won’t be perfect**, just efficient and reliable. This is why there is a cluster (0 -Business Intelligence Developer) with a high heterogeneity. Additionally, the group (5 – Product Manager) is quite cohesive, but its identifier may not fully reflect the group's composition.
 
 ### Skills Sccatter:
-As for the skills scatter-plot visualization, we see how the importance (counts – “y axis”) of the top 30 skills (“x axis”) across different job offers (clusters – “legend”). The size of the points redundantly represents the skill count, and there is a line representing mean counting of the overall groups.
+As for the skills scatter-plot visualization, we see the importance (counts – “y axis”) of the top 30 skills (“x axis”) across different job offers (clusters – “legend”). The size of the points redundantly represents the skill count, and there is a line representing mean counting of the overall groups.
 
 ![skills_jobPosition](https://github.com/XReverte/Webscraping_Linkedin/assets/100844285/f378bdee-bde5-42f4-b344-001286176961)
 *Top 30 skills sccatter-plot for each cluster -Clusterized by kind of job offer-*
