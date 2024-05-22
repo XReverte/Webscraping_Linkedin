@@ -21,7 +21,7 @@ This project was conceived as a means to **hone my abilities as a Data Scientist
 One of the primary motivations behind this project was to **identify the top skills required in the data science domain**. Understanding which skills are in high demand allows me to prioritize my learning efforts, ensuring that I am well-prepared to meet the expectations of the job market. This enhances my ability to position myself as a competitive candidate in the professional landscape.
 
 ### Challenges and Limitations
-Although this project is designed to be fault-tolerant, I encountered a significant challenge: LinkedIn's XPaths for various elements change regularly. Despite my efforts to use more stable XPaths, some failures are still expected over time. This is an inherent limitation of web scraping dynamic websites, and users should be prepared to update the XPaths as needed.
+Although this project is designed to be fault-tolerant, I encountered a significant challenge: LinkedIn's XPaths for various elements change regularly. Despite my efforts to use more stable XPaths, some failures are still expected over time. This is an inherent limitation of web scraping dynamic websites, and **users should be prepared to update the XPaths as needed**.
 
 ### Disclaimer
 To further enhance my skills, I made this project reproducible so it works for any job description and location specified. However, please be aware:
